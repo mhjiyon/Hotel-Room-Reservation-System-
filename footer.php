@@ -11,9 +11,9 @@
         <div class="col-lg-6 p-4">
            <h5 class="mb-3">Links</h5>
            <a href="index.php" class="d-inline-block mb-2 text-dark text-decoration-none me-2">Home </a>
-           <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none me-2">Rooms </a>
+           <a href="rooms.php" class="d-inline-block mb-2 text-dark text-decoration-none me-2">Rooms </a>
            <a href="facilities.php" class="d-inline-block mb-2 text-dark text-decoration-none me-2">Facilities </a>
-           <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none me-2">Contact us </a>
+           <a href="contact.php" class="d-inline-block mb-2 text-dark text-decoration-none me-2">Contact Us </a>
            <a href="about.php" class="d-inline-block mb-2 text-dark text-decoration-none">About </a>
 
         </div>
