@@ -137,6 +137,17 @@
                         Room Heater
                       </span>
                   </div>
+
+                   <div class="guests">
+                    <h6 class="mb-1">Gustets</h6>
+                      <span class="badge rounded-pill bg-light text-dark  text-wrap ">
+                          5 Adults
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark  text-wrap ">
+                          4 Children
+                        </span>
+                  </div>
+
                   <div class="rating mb-4">
                       <h6 class="mb-1"> Rating</h6>
                       <span class=" rounded-pill bg-light">
@@ -192,6 +203,15 @@
                         Room Heater
                       </span>
                   </div>
+                  <div class="guests">
+                    <h6 class="mb-1">Gustets</h6>
+                      <span class="badge rounded-pill bg-light text-dark  text-wrap ">
+                          5 Adults
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark  text-wrap ">
+                          4 Children
+                        </span>
+                    </div>
                   <div class="rating mb-4">
                       <h6 class="mb-1"> Rating</h6>
                       <span class=" rounded-pill bg-light">
@@ -247,6 +267,15 @@
                         Room Heater
                       </span>
                   </div>
+                  <div class="guests">
+                    <h6 class="mb-1">Gustets</h6>
+                      <span class="badge rounded-pill bg-light text-dark  text-wrap ">
+                          5 Adults
+                        </span>
+                        <span class="badge rounded-pill bg-light text-dark  text-wrap ">
+                          4 Children
+                        </span>
+                    </div>
                   <div class="rating mb-4">
                       <h6 class="mb-1"> Rating</h6>
                       <span class=" rounded-pill bg-light">
@@ -394,24 +423,24 @@
                     <i class="bi bi-telephone-fill"></i>+8801985771329
                 </a>
                 <br>
-                <a href="Email: hasan.jiyon@northsouth.edu" class="d-inline-block mb-2 text-decoration-none text-dark">
+                <a href="mailto: hasan.jiyon@northsouth.edu" class="d-inline-block mb-2 text-decoration-none text-dark">
                     <i class="bi bi-envelope-fill"></i> hotelnorthsouth@gmail.com
                 </a>
              </div>
                 
              <div class="bg-white p-4 rounded mb-4 shadow">
                 <h5>Follow Us</h5>
-                <a href="https://twitter.com/NorthSouthU" class="d-inline-block mb-3">
+                <a href="https://twitter.com/NorthSouthU" target="blank" class="d-inline-block mb-3">
                      <span class="badge bg-light text-dark fs-6 p-2">
                         <i class="bi bi-twitter"></i>Twitter</a>
                      </span>
                 <br>
-                <a href="https://www.facebook.com/NorthSouthUniversity" class="d-inline-block mb-3">
+                <a href="https://www.facebook.com/NorthSouthUniversity" target="blank" class="d-inline-block mb-3">
                     <span class="badge bg-light text-dark fs-6 p-2">
                         <i class="bi bi-facebook"></i>Facebook</a>
                     </span>
                <br>
-               <a href="https://www.instagram.com/northsouthuniversity" class="d-inline-block mb-3">
+               <a href="https://www.instagram.com/northsouthuniversity" target="blank" class="d-inline-block mb-3">
                 <span class="badge bg-light text-dark fs-6 p-2">
                    <i class="bi bi-instagram"></i>Instagram</a>
                 </span>
