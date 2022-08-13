@@ -104,8 +104,63 @@
 
   </div>
 </div>
+
+<h3 class="my-5 fw-bold text-center">MANAGEMENT TEAM</h3>
+<div class="container px-4">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper mb-5">
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="image/about/jiyon.PNG" class="w-100">
+        <h5 class="mt-2">M H Jiyon</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="image/about/dihan.PNG" class="w-100">
+        <h5 class="mt-2">Dihan</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="image/about/jiyon.PNG" class="w-100">
+        <h5 class="mt-2">M H Jiyon</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="image/about/ishrat.PNG" class="w-100">
+        <h5 class="mt-2">Ishrat</h5>
+      </div>
+      
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
     <!-- footer -->
 <?php require('footer.php'); ?>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView:3,
+        spaceBetween:40,
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints:{
+            320:{
+                slidesPerView:"1",
+            },
+            640:{
+                slidesPerView:"1",
+            },
+            768:{
+                slidesPerView:"2",
+            },
+            1024:{
+                slidesPerView:"3",
+            }
+        }
+      });
+    </script>
 
 </body>
 </html>
