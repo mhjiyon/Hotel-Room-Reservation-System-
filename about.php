@@ -31,7 +31,7 @@
 <div class="container">
   <div class="row justify-content-between align-items-center">
     <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-         <h3 class="mb-3">Lorem ipsum dolor sit.</h3>
+         <h3 class="mb-3">M H Jiyon</h3>
          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Cupiditate optio, rerum beatae fugit hic amet atque.
@@ -46,7 +46,7 @@
 
   <div class="row justify-content-between align-items-center">
     <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-         <h3 class="mb-3">Lorem ipsum dolor sit.</h3>
+         <h3 class="mb-3">Israt Sraboni.</h3>
          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Cupiditate optio, rerum beatae fugit hic amet atque.
@@ -61,7 +61,7 @@
 
   <div class="row justify-content-between align-items-center">
     <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-         <h3 class="mb-3">Lorem ipsum dolor sit.</h3>
+         <h3 class="mb-3">K H Nazmul</h3>
          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Cupiditate optio, rerum beatae fugit hic amet atque.
@@ -109,24 +109,19 @@
 <div class="container px-4">
   <div class="swiper mySwiper">
     <div class="swiper-wrapper mb-5">
-      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-        <img src="image/about/jiyon.PNG" class="w-100">
-        <h5 class="mt-2">M H Jiyon</h5>
-      </div>
-      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-        <img src="image/about/dihan.PNG" class="w-100">
-        <h5 class="mt-2">Dihan</h5>
-      </div>
-      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-        <img src="image/about/jiyon.PNG" class="w-100">
-        <h5 class="mt-2">M H Jiyon</h5>
-      </div>
-      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-        <img src="image/about/ishrat.PNG" class="w-100">
-        <h5 class="mt-2">Ishrat</h5>
-      </div>
-      
-      
+<?php
+$about_r = selectAll('team_details');
+$path= ABOUT_IMG_PATH;
+while($row=mysqli_fetch_assoc($about_r)){
+echo $str = <<<data
+  <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+    <img src="$path$row[picture]" class="w-100">
+    <h5 class="mt-2">$row[name]</h5>
+  </div>
+data;
+}
+?>
+          
     </div>
     <div class="swiper-pagination"></div>
   </div>
