@@ -28,23 +28,23 @@
     }
 
     function select($sql, $values, $datatypes){
-    $con=$GLOBALS['con'];
-    if($stmt =mysqli_prepare($con,$sql))
-    {
-        mysqli_stmt_bind_param($stmt,$datatypes,...$values);
-        if(mysqli_stmt_execute($stmt)){
-            $res=mysqli_stmt_get_result($stmt);
-            mysqli_stmt_close($stmt);
-            return $res;
+        $con=$GLOBALS['con'];
+        if($stmt =mysqli_prepare($con,$sql))
+        {
+            mysqli_stmt_bind_param($stmt,$datatypes,...$values);
+            if(mysqli_stmt_execute($stmt)){
+                $res=mysqli_stmt_get_result($stmt);
+                mysqli_stmt_close($stmt);
+                return $res;
+            }
+            else{
+                mysqli_stmt_close($stmt);
+                die("Query cannot be executed - select");
+            }
         }
         else{
-            mysqli_stmt_close($stmt);
-            die("Query cannot be executed - select");
+            die("Query cannot be prepared - select");
         }
-    }
-    else{
-        die("Query cannot be prepared - select");
-    }
     }
 
     function update($sql, $values, $datatypes){
@@ -87,8 +87,7 @@
         }
     }
 
-    function delete($sql, $values, $datatypes){
-
+    function delete($sql,$values,$datatypes){
         $con=$GLOBALS['con'];
         if($stmt =mysqli_prepare($con,$sql))
         {
@@ -105,7 +104,7 @@
         }
         else{
             die("Query cannot be prepared - delete");
-        }
+        } 
     }
 
     function ddelQ($a){
@@ -116,5 +115,25 @@
         $result=mysqli_query($con,$q);
         echo $result;
       }
+      
+      function deleteQ($s,$a){
+        $con=$GLOBALS['con'];
+        
+        $q= "DELETE FROM $s WHERE id=$a";
+  
+        $result=mysqli_query($con,$q);
+        echo $result;
+        return true;
+      }
+      function deleteRF($s,$a){
+        $con=$GLOBALS['con'];
+        
+        $q= "DELETE FROM $s WHERE room_id=$a";
+  
+        $result=mysqli_query($con,$q);
+        echo $result;
+        return true;
+      }
+
    
 ?>

@@ -38,3 +38,19 @@ border:1px solid var(--teal_hover);
     right: 25px;
     z-index: 111;
 }
+
+#dashboard-menu{
+    position: fixed;
+    height: 100%;
+    z-index: 11;
+}
+
+@media screen and (max-width:991px){
+    #dashboard-menu{
+        height: auto;
+        width: 100%;
+    }
+    #main-content{
+       margin-top: 60px;
+     }
+}

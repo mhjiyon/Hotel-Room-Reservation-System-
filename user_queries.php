@@ -28,6 +28,7 @@
       }
     }
    }
+   
    if(isset($_GET['del']))
    {
     $frm_data = filteration($_GET);
